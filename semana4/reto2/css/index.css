@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+@import './modules/variables.css';
+@import './modules/header.css';
+@import './modules/hero.css';
+@import './modules/info.css';
+@import './modules/footer.css';
+@import './modules/access.css';
+/* ul {
+   display: flex;
+   gap: 30px;
+   text-align: right;
+   justify-content: right;
+   list-style: none;
+   
+ }
+ a{
+  text-decoration: none;
+ } */
+:root, html[data-theme="oscuro"] { /* valor por defecto*/
+
+color-scheme: claro oscuro;/* temas aceptados */
+  /* Fonts */
+  --font-primary: 'Raleway', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  --font-size: 14px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  /* COLORS */
+  --neutral-white: hsl(0, 0%, 100%);
+}
+ 
+
+html[data-theme="claro"]{
+  --primary-dark-blue-into: blue;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  background-color:  white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.curva{
+  width: 100vw;
+  height: 100px;
+  background-image: url(../images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 100px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+@media (max-width:768px){
+  .curva{
+    height: 40px;
+  }
+}
+

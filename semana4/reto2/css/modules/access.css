@@ -1,0 +1,64 @@
+.access{
+  display: flex;
+  gap: 20px;
+  font-family: var(--font-primary);
+  padding:80px 60px 80px 40px;
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+  justify-content: space-between;
+}
+
+.access div:nth-child(1) h2{
+  font-size:1.8rem;
+  margin-bottom: 20px;
+}
+
+.access div:nth-child(1) p{
+  font-size:16px;
+  width: 480px;
+}
+.access form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.access form input:nth-child(1){
+  padding: 0.8rem 1.5rem;
+  min-width: 400px;
+}
+
+.access form input:nth-child(2){
+    font-family: var(--font-secondary);
+  font-weight: var(--font-weight-bold);
+  border: none;
+  border-radius: 3px;
+  padding: 0.8rem 1.5rem;
+  line-height: 1.5;
+  width: 200px;
+  color: var(--neutral-white);
+  background-color: hsl(224, 93%, 58%);
+}
+
+@media (max-width:768px){
+  .access{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+  .access div:nth-child(1) p{
+    font-size:1.3rem;
+    width: 350px;
+  }
+
+  .access form input:nth-child(1){
+    padding: 0.8rem 1.5rem;
+    min-width: 300px;
+  }
+  .access form input:nth-child(2){
+    min-width: 300px;
+  }
+
+}
